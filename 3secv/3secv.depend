@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1710260956 source:f:\infoo9\olimpiada\3secv\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+

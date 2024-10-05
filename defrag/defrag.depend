@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1714831008 source:f:\infoo9\olimpiada\defrag\main.cpp
+	<iostream>
+	<fstream>
+

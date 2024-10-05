@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709028768 source:f:\infoo9\olimpiada\buldo\buldo\main.cpp
+	<iostream>
+	<fstream>
+

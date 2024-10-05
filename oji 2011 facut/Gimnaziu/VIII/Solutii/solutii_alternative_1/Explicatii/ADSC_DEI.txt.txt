@@ -1,0 +1,26 @@
+Solutie _ adrian Panaete
+
+Algoritmul se bazeaza pe observatia ca daca dintr-o secventa de cifre pot obtine
+o suma atunci pot obtine si opusa sa schimband semnele.
+
+Se imparte orice secventa de la mijloc.
+Se determina valorile pozitive care se pot obtine pe fiecare parte
+Se combina valorile pozitive astfel incat sa obtin tot valori pozitive
+	varianta 1: se aduna 
+	varianta 2: se scade valoare mare - valoare mica (eventual egale)
+
+	In ambele cazuri codurile de semne ale celor doua subsecvente 
+	( retinute binar ca la Soutia lui Marinel ) 
+	genereaza codul valori pe intreaga secventa
+	
+	varianta 1: concatenand codurile celor doua valori
+	varianta 2 concatenand codul valorii mari cu negatul codului valorii mici
+		(cu semnificatia la valoarea mica schimbam semnul la toti termenii)
+
+In ambele cazuri se pastreaza ordinea bitilor adica pozitia subcodurilor in codul cumulat
+
+Facand apelul DEI de la prima la ultima cifra la final vom obtine
+	1: Orice valoare pozitiva genereaza cifrele
+	2: Codul de semne cu care acea valoare e generata
+
+Daca valoarea dorita la final e negativa trebuie doar sa schimbam semnele deci sa negam codul binar.

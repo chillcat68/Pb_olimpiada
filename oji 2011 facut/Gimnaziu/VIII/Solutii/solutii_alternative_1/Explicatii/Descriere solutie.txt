@@ -1,0 +1,14 @@
+Solutie - Genoiu Nicolae
+
+Mi-a fost greu sa inventez alta solutie si sa renunt la programare dinamica.
+
+Am ales variata cu arbore binar cu cele 20 de nivele ale sale.
+Am pastrat ideea lui Adrian Panaete:"Pentru fiecare cifra se construiesc valorile ce pot fi obtinute din toate cifrele
+pana la cifra curenta inclusiv." si pentru fiecare cifra am obtinut un nivel complet al arborelui. 
+Fiecare nod contine  valoarea corespunzatoare obtinuta prin adunare (daca nodul este descendent stang) sau scadere (daca nodul este descendent drept) a cifrei citite la valoarea din nodul tata.
+
+O parcurgere a arborelui in inordine va cauta nodul frunza care contine valoarea cautata (N). Rezultatul poate fi NULL (N nu se poate obtine) sau altul (am gasit un nod terminal cu valoarea N) caz in care se opreste cautarea. 
+Cifrele le-am retinut in vector in timpul citirii.
+Semnele se deduc prin traversarea arborelui de la nodul gasit la radacina si se retin in vector. Am accelerat traversarea retinand in fiecare nod adresa pentru tatal acestuia.
+
+In fine. E o solutie "grea" si mie-mi plac lucrurile complicate.

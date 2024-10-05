@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709833268 source:f:\infoo9\olimpiada\cartela\main.cpp
+	<iostream>
+	<fstream>
+

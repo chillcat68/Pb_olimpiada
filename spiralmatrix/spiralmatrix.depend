@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1710262688 source:f:\infoo9\olimpiada\spiralmatrix\main.cpp
+	<iostream>
+	<fstream>
+

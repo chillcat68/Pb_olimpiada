@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1714577180 source:f:\infoo9\olimpiada\elicop\main.cpp
+	<iostream>
+	<fstream>
+

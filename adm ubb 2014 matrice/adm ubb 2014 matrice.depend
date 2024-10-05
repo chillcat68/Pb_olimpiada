@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1709545314 source:d:\programe_c++\adm ubb 2014 matrice\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+

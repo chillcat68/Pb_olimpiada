@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1710142648 source:f:\infoo9\olimpiada\oneout\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+
+1710150142 source:g:\infoo9\olimpiada\oneout\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+

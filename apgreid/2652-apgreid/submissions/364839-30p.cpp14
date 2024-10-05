@@ -1,0 +1,82 @@
+#include <fstream>
+#include <cassert>
+
+using namespace std;
+
+ifstream cin("apgreid.in");
+ofstream cout("apgreid.out");
+
+#define MAXM 100000
+#define MOD 1000000007
+#define int long long
+
+char l[MAXM+1];
+int x[MAXM+1];
+
+signed main()
+{
+    int t, m, p0;
+    cin>>t>>m>>p0;
+	assert(t == 2);
+	// assert(m <= 1000);
+    int i, maxc, maxp, maxn;
+    maxc=maxp=maxn=0;
+    for(i=0; i<m; i++)
+    {
+        cin>>l[i]>>x[i];
+        if(l[i]=='c') maxc=max(maxc, x[i]);
+        else if(l[i]=='p') maxp=max(maxp, x[i]);
+        else maxn=max(maxn, x[i]);
+    }
+    if(t==1)
+        cout<<maxc<<" "<<maxp<<" "<<maxn;
+    else
+    {
+        long long ans, put;
+        ans=p0;
+        for(i=0; i<m; i++)
+        {
+            if(l[i]=='p')
+            {
+                if(t==2) cout<<l[i]<<" "<<x[i]<<'\n';
+                else
+                {
+                    ans+=x[i], ans%=MOD;
+                }
+            }
+        }
+        for(i=0; i<m; i++)
+        {
+            if(l[i]=='n')
+            {
+                if(t==2) cout<<l[i]<<" "<<x[i]<<'\n';
+                else
+                {
+                    ans*=x[i], ans%=MOD;
+                }
+            }
+        }
+        for(i=0; i<m; i++)
+        {
+            if(l[i]=='c')
+            {
+                if(t==2) cout<<l[i]<<" "<<x[i]<<'\n';
+                else
+                {
+                    put=1;
+                    while(x[i]>0)
+                    {
+                        if(x[i]%2==1)
+                            put=put*ans;
+                        put%=MOD;
+                        ans=ans*ans%MOD;
+                        x[i]=x[i]/2;
+                    }
+                    ans=put;
+                }
+            }
+        }
+        if(t==3)
+            cout<<ans;
+    }
+}

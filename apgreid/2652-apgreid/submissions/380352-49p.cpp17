@@ -1,0 +1,106 @@
+#pragma GCC optimize("O3")
+#pragma GCC optimize("O1")
+#pragma GCC optimize("O2")
+#pragma GCC optimize("unroll-loops")
+#include <fstream>
+#include <vector>
+
+
+using namespace std;
+
+//#define cin fin
+//#define cout fout
+//
+ifstream cin("apgreid.in");
+ofstream cout("apgreid.out");
+
+vector<int> carti, nestemate, potiuni;
+
+void c1()
+{
+    int maxc = 0, maxn = 0, maxp = 0;
+
+    // maxpotiuni
+    for (int i = 0; i < potiuni.size(); ++i)
+        if ( potiuni[i] > maxp ) maxp = potiuni[i] ;
+
+    // maxcarti
+    for (int i = 0; i < carti.size(); ++i)
+        if ( carti[i] > maxc ) maxc = carti[i];
+
+    // maxnestemate
+    for (int i = 0; i < nestemate.size(); ++i)
+        if ( nestemate[i] > maxn ) maxn = nestemate[i];
+
+    cout << maxc << ' ' << maxp << ' ' << maxn;
+
+}
+
+void c2()
+{
+    // maxpotiuni
+    for (int i = 0; i < potiuni.size(); ++i)
+        cout << "p " << potiuni[i] << '\n';
+
+    // maxnestemate
+    for (int i = 0; i < nestemate.size(); ++i)
+        cout << "n " << nestemate[i] << '\n';
+
+    // maxcarti
+    for (int i = 0; i < carti.size(); ++i)
+        cout << "c " << carti[i] << '\n';
+
+}
+
+void c3()
+{
+    long long putere = 0;
+
+
+    // maxpotiuni
+    for (int i = 0; i < potiuni.size(); i++)
+        putere = ( putere + potiuni[i] ) % 1000000007;
+
+    // maxnestemate
+    for (int i = 0; i < nestemate.size(); i++)
+        putere = ( putere * nestemate[i] ) % 1000000007;
+
+    // maxcarti
+    for (int i = 0; i < carti.size(); i++)
+    {
+        int pow = carti[i];
+        for (int j = 1; j <= pow; j++)
+            putere = ( putere*pow ) % 1000000007;
+    }
+
+
+
+    cout << putere;
+
+}
+
+int main()
+{
+    int c;
+    int m, p0;
+    cin >> c >> m >> p0;
+    for (int i = 1; i <= m; ++i)
+    {
+        char tip;
+        int nr;
+        cin >> tip >> nr;
+        if ( tip == 'p' )
+            potiuni.push_back(nr);
+        else if (  tip == 'n' )
+            nestemate.push_back(nr);
+        else
+            carti.push_back(nr);
+    }
+
+    if ( c == 1 )
+        c1();
+    else if ( c == 2 )
+        c2();
+    else
+        c3();
+}

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709979018 source:f:\infoo9\olimpiada\cri\main.cpp
+	<iostream>
+	<fstream>
+

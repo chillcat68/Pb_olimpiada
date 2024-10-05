@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1708343336 source:f:\infoo9\olimpiada\arc\main.cpp
+	<iostream>
+	<fstream>
+

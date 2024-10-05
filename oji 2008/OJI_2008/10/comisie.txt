@@ -1,0 +1,13 @@
+Comisie clasa a X-a:
+prof. Doru Popescu Anastasiu, C. N. "R. Greceanu" Slatina
+prof. Cristina Barbieru, Liceul de Informatica "Grigore Moisil" Timisoara
+prof. Adrian Nita  C.N. "Emanoil Gojdu", Oradea
+prof. Mioara Nita  C.N. "Emanoil Gojdu", Oradea
+prof. Carmen Minca Liceul "Ion Neculce", Bucuresti
+prof. Sichim Cristina,  C.N. "Ferdinand I",Bacau
+
+Problemele selectate apartin:
+Colaj - prof. Carmen Minca
+Piata - prof. Doru Popescu Anastasiu
+
+

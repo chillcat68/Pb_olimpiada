@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1717591247 source:d:\programe_c++\olimpiada\cifre\main.cpp
+	<iostream>
+	<fstream>
+

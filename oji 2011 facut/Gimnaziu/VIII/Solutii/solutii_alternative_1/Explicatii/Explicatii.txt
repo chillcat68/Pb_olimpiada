@@ -1,0 +1,27 @@
+Solutie - Adrian Panaete
+
+Am verificat sursa cu evaluatorul autorului si obtine 100 puncte
+
+Ideea : programare dinamica
+
+Pentru fiecare cifra se construiesc valorile ce pot fi obtinute din toate cifrele
+pana la cifra curenta inclusiv.
+
+Memorez intr-un tablou pentru fiecare cifra si pentru fiecare valoare obtinuta 
+	1=valoarea a fost obtinuta prin adunare
+	2=valoarea a fost obtinuta prin scadere
+
+Daca la ultima cifra s-a obtinut valoarea ceruta in enunt se poate recupera formula
+folosind tabloul.
+
+Analiza complexitatii 
+
+Solutia autorului : 
+
+exponential O(2^m) -> evident din descrierea solutiei
+
+Solutia propusa de mine :  
+Polinomial O(m^2) -> dictata de etapa in care se realizeaza tabloul in care
+numarul de linii este m iar numarul de coloane efectiv utilizate nu depaseste
+2*suma cifrelor numarului deci prin supraestimare 9*m
+  

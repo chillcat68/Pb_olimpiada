@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1717429772 source:d:\programe_c++\olimpiada\abx\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+

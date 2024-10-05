@@ -1,0 +1,29 @@
+adrian 3:
+
+Initial nu tin cont de ordinea cifrelor. Contorizez fiecare cifra si stabilesc
+prin backtracking pentru fiecare cifra de cate ori sa folosesc semnul '+' si cate 
+ori sa folosesc '-' pentru ca in final sa obtin rezultatul dorit.
+
+apelul back(int cifra,int rezultat) functioneaza astfel:
+	Am ajuns sa utilizez o cifra 'c' 
+        Prin utilizarea cifrelor <'c' am obtinut un rezultat 'r'
+	Cifra 'c' apare de cnt[c] ori
+        Construiesc toate valorile pe care le pot obtine adaugand si aparitia cifrei c
+	Parcurg toate variantele incepand cu 'zero de +' si 'toate de -' pana la 
+	'toate cu +' si 'zero cu -'.
+        Pentru fiecare rezultat obtinut fac apel la cifra urmatoare.
+        Daca am ajuns la "cifra" 10 si la rezultatul "cerut" am obtinut o solutie 
+        si inchei fortat toate apelurile recursive memorand la intoarcere numarul de + si -
+        pentru fiecare cifra.
+
+adrian 4:
+
+Folosesc un backtracking natural care stabileste la fiecare pozitie in sirul de cifre 
+ce valoare ar trebui sa obtin pana la cifra urmatoare pentru a obtine o valoare ceruta
+la pozitia curenta si daca este posibil sa obtin o astfel de valoare.
+Se observa ca daca am ajuns la o pozitia p unde am cifra c si as avea nevoie ca cifrele
+incepand cu pozitia p sa imi genereze rezultatul r atunci avem doua variante
+1. Sa folosesc +c si atunci la pozitia p+1 am nevoie de valoarea r-c
+2. Sa folosesc -c si atunci la pozitia p+1 am nevoie de valoarea r+c
+
+        
